@@ -1,0 +1,1512 @@
+:root{
+    --fuente_principal :  "Montserrat", s   ans-serif;
+    --textoNegrita: 900;
+    --textoNormal: 400;
+    --textoThin: 100;
+
+    --colorPrincipal : #49495a;
+    --colorTitulos: #403ccf;
+    --bgPrincipal: #fbfaff;
+    --bgSecundario: #eae8f3;
+    --bgBannerPrincipal: #ede0ea;
+    --bgBannerSecundario: #ebdefe;
+    --bgBtnPrincipal: #2623b1;
+    --bgBtnSecundario: #5a3dff;
+}
+
+body{
+    font-family: var(--fuente_principal);
+    font-size: 16px;
+}
+/* ::: Estilos Encabezado Shelby Brothers ---> Página 1 ::: */
+.header{
+    display: flex;
+    margin: 4rem;
+    height: 600px;
+}
+.imagenHeader{
+    height: 100%;
+    width: 100%;
+}
+.header__contenedorTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    width: 50%;
+}
+.header__contenedorTitulo{
+    color: var(--colorTitulos);
+    font-size: 2.3rem;
+    font-weight: var(--textoNegrita);
+}
+.header__contenedorParrafo{
+    color: var(--colorPrincipal);
+    font-size: 1.3rem;
+    font-weight: var(--textoNormal);
+}
+/* Fin de estilos Pagina 1*/
+/* :::Estilos de quienes somos ----> Página 2::: */
+.quienes-somos {
+    margin: 4rem;
+    padding: 50px;
+    text-align: center;
+}
+
+.quienes-somos__titulo {
+    font-size: 2.3rem;
+    color: var(--colorTitulos);
+    margin-bottom: 20px;
+}
+
+.quienes-somos__contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.quienes-somos__columna {
+    flex: 1;
+    text-align: left;
+}
+
+.quienes-somos__subtitulos {
+    font-size: 1.26em;
+    color: var(--colorTitulos);
+    margin-bottom: 10px;
+}
+
+.quienes-somos__parrafo{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNormal);
+}
+/* Fin de estilos Pagina 2*/
+/* :::Estilos de la sección de menú ----> Página 3::: */
+.bloqueMenu{
+    margin: 4rem;
+}
+.menu__contenedor{
+    width: 100%;
+}
+.menu__contenedor__titulo{
+    display: flex;
+    align-items: center;
+}
+.menu__titulo{
+    color: var(--colorTitulos);
+    font-size: 2.3rem;
+    font-weight: var(--textoNegrita);
+}
+.menu__contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+}
+.menu__texto{ 
+    display: grid;
+    padding: 3em;
+}
+.menu__elementos__alimentos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    grid-auto-rows: minmax(auto, auto);
+}
+.menu__elemento{
+    background: var(--bgSecundario);
+    padding: 1.5rem;
+}
+.elemento__menu3{ 
+    grid-column: 1/3;
+}
+.menu__subtitulo{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNegrita);
+}
+.menu__parrafo{
+    font-size: 1.2rem;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNormal);
+}
+.menu__imagen{
+    width: 90%; 
+}
+.imagenMenu{
+    width: 100%;
+    height: 100%;
+}
+/* Fin de estilos Pagina 3*/
+/* :::Estilo sección ambiente -----> Página 4::: */
+.bloqueAmbiente{
+    margin: 4rem;
+}
+.ambiente__contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.ambiente__texto{
+    display: grid;
+}
+.ambiente__contenedor__titulo{
+    display: flex;
+    align-items: end;
+    max-height: 200px;
+}
+.ambiente__tituloprincipal{
+    color: var(--colorTitulos);
+    font-size: 2.3rem;
+    font-weight: var(--textoNegrita);
+}
+.ambiente__contenedor__elementos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    grid-auto-rows: minmax(100px, 200px);
+    margin-right: 3rem;
+}
+.ambiente__icono{
+    flex-shrink: 0;
+    max-width: 40px;
+    min-width: 30px;
+}
+.iconoAmbiente{
+    max-width: 40px;
+}
+.ambiente__subtitulo{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNegrita);
+}
+.ambiente__parrafo{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNormal);
+}
+.ambiente__imagen{
+    width: 90%; 
+}
+.imagenAmbiente{
+    width: 100%;
+    height: 100%;
+}
+/* Fin de estilos Pagina 4*/
+/* Estilos Ubicación y horarios ----> Página 5 */
+.bloque__ubicacion {
+    margin: 1em;
+}
+.ubicacion__imagen{
+    border-radius: 10px; 
+    margin-bottom: 20px;
+}
+.imagenUbicacion{
+    width: 100%;
+}
+.ubicacion__texto {
+    padding: 3rem;
+}
+.ubicacion__contenedor__titulo{
+    display: flex;
+    align-items: center;
+}
+.ubicacion__titulo {
+    font-size: 2.3em;
+    font-weight: var(--textoNegrita);
+    color: var(--colorTitulos);
+    margin-bottom: 20px;
+}
+.ubicacion__enumeracion{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.ubicacion__line{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border: none;
+    background: var(--bgSecundario);
+    z-index: 0;
+}
+.ubicacion__numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: rect(20px 45px 70px 5px);
+    background-color: var(--bgSecundario);
+    color: var(--colorPrincipal); 
+    min-width: 40px; 
+    min-height: 40px;
+    padding: 5px 5px;
+    font-size: 1.6rem;
+}   
+.ubicacion__contenedor__elementos {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.ubicacion__elemento {
+    padding: 15px;
+    flex: 1; 
+    min-width: 250px;
+    text-align: left; 
+}
+
+.ubicacion__subtitulo {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: var(--textoNegrita);
+    margin-bottom: 10px;
+}
+
+.ubicacion__parrafo {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+}
+/* Fin de estilos Pagina 5*/
+/* Promociones y eventos especiales ----> Página 6 */
+.BloquePromociones{
+    margin: 4rem;
+}
+.promocionesContenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 7rem;
+}
+.promociones__contenedor__titulo{
+    display: flex;
+    align-items: end;
+}
+.promociones__titulo{
+    color: var(--colorTitulos);
+    font-size: 2.3rem;
+    font-weight: var(--textoNegrita);
+}
+.promociones__contenedor__elementos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.promociones__elemento{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.promociones__contenedor__elementos{
+    display: flex;
+}
+.promociones__numero{
+    margin-right: 2rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px; 
+    min-height: 190px;
+    font-size: 1.6rem;
+    background: var(--bgSecundario);
+    clip-path: polygon(50% 100%, 100% 90%, 99% 0%, 50% 10%, 0% 0%, 0% 90%);
+}
+.promociones__subtitulos{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNegrita);
+}
+.promociones__parrafo{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNormal);
+}
+.ambiente__imagen{
+    width: 90%;
+}
+.imagenAmbiente{
+    width: 100%;
+    height: 100%;
+}
+/* Fin de estilos Pagina 6*/
+/* Estilos Beneficios para clientes -----> Página 7 */
+.bloqueBeneficios{
+    margin: 4em;
+}
+.beneficios__contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 7rem;
+}
+.beneficios__contenedor{
+    width: 100%;
+}
+.beneficios__contenedor__titulo{
+    display: flex;
+    align-items: end;
+}
+.beneficio__texto{
+    display: grid;
+}
+.beneficios__titulo{
+    color: var(--colorTitulos);
+    font-size: 2.3rem;
+    font-weight: var(--textoNegrita);
+}
+.beneficios__elementos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 2em;
+}
+.beneficio__numero{
+    clip-path: rect(10px 45px 55px 5px);
+    background-color: var(--bgSecundario);
+    color: var(--colorPrincipal); 
+    min-width: 40px; 
+    min-height: 40px;
+    padding: 5px 5px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.beneficios__elemento{
+    display: flex; 
+    align-items: start;
+    gap: 10px;
+}
+.beneficios__subtitulo{
+    font-size: 1.5rem;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNegrita);
+}
+.beneficios__parrafo{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNormal);
+}
+.beneficios__imagen{
+    width: 90%;
+}
+.imagenBeneficios{
+    width: 100%;
+    height: 100%;
+}
+/* Fin de estilos Pagina 7*/
+/* :::Estilos testimonio -----> Página 8 ::: */
+.testimonios{
+    margin: 40px auto;
+    padding: 5em;
+    text-align: center;
+}
+.testimonio__titulo{
+    color: var(--colorTitulos);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.testimonio__contenido{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+.testimonio__columna{
+    flex: 1;
+    text-align: left;
+}
+.testimonio__subtitulo {
+    font-size: 1.5rem;
+    color: var(--colorTitulos);
+    margin-bottom: 10px;
+}
+
+.testimonio__parrafo {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--colorPrincipal);
+    font-weight: var(--textoNormal);
+}
+/* Fin de estilos Pagina 8*/
+/* Estilos pagina Proximos pasos  -----> Página 9*/
+.proximosPasos{
+    margin: 4rem;
+    display: flex;
+    height: 600px;
+}
+.proximosPasos__contenedor{
+    width: 50%; 
+}
+.proximosPasos__imagen{
+    width: 10%;
+}
+.imagenProximosPasos{
+    height: 100%;
+}
+.proximosPasos__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    width: 50%;
+}
+.proximosPasos__titulo{
+    color: var(--colorTitulos);
+    font-size: 2.3rem;
+    font-weight: var(--textoNegrita);
+}
+.proximosPasos__parrafo{
+    color: var(--colorPrincipal);
+    font-size: 1.4rem;
+    font-weight: var(--textoNormal);
+}
+.proximosPasos__boton{
+    background: linear-gradient(90deg,var(--bgBtnPrincipal), var(--bgBtnSecundario));
+    color: var(--bgPrincipal);
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 5px;
+
+}
+/* Fin de estilos Pagina 9*/
+/* Estilos pagina Proximos pasos  -----> Página 10*/
+.bloque__contacto {
+    margin: 1em;
+}
+
+.contacto__imagen{
+    border-radius: 10px; 
+    margin-bottom: 20px;
+}
+.imagenContacto{
+    width: 100%;
+}
+.contacto__texto {
+    padding: 3rem;
+}
+
+.contacto__titulo {
+    font-size: 2.3em;
+    font-weight: var(--textoNegrita);
+    color: var(--colorTitulos);
+    margin-bottom: 20px;
+}
+.contacto__contenedor__elementos {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.contacto__elemento {
+    background: var(--bgSecundario);
+    padding: 15px;
+    flex: 1; 
+    min-width: 250px;
+    text-align: left; 
+}
+
+.contacto__subtitulo {
+    font-size: 1.2em;
+    font-weight: var(--textoNegrita);
+    margin-bottom: 10px;
+}
+
+.contacto__parrafo {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* :::::::::: Media Queries :::::::::: */
+/* Pantallas grandes (laptops pequeñas o tablets horizontales) */
+@media (max-width: 1024px) {
+    .header {
+        flex-direction: row;
+        margin: 2rem;
+        height: auto;
+    }
+
+    .imagenHeader {
+        width: 50%;
+        height: auto;
+    }
+
+    .header__contenedorTexto {
+        padding: 2rem;
+        width: 50%;
+    }
+
+    .header__contenedorTitulo {
+        font-size: 2rem;
+    }
+
+    .header__contenedorParrafo {
+        font-size: 1.2rem;
+    }
+    /* Estilos para Quienes Somos */
+    .quienes-somos__contenido {
+        gap: 2rem;
+    }
+
+    .quienes-somos__columna {
+        flex: 1 1 calc(33.33% - 1rem); 
+        text-align: center; 
+    }
+
+    .quienes-somos__titulo {
+        font-size: 2rem;
+    }
+
+    .quienes-somos__parrafo {
+        font-size: 1.1rem;
+    }
+    /* Estilos Nuestro Menú */
+    .menu__contenido {
+        grid-template-columns: 1fr; 
+        gap: 3rem; 
+    }
+    .menu__elementos__alimentos{
+        grid-template-columns: 1fr;
+    }
+    .menu__imagen {
+        justify-content: center;
+    }
+
+    .menu__titulo {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .menu__subtitulo {
+        font-size: 1.4rem;
+    }
+
+    .menu__parrafo {
+        font-size: 1.1rem;
+    }
+    /* Estilos para Ambiente */
+    .ambiente__contenido {
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+    }
+
+    .ambiente__imagen {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .ambiente__contenedor__elementos {
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+    }
+
+    .ambiente__tituloprincipal {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .ambiente__subtitulo {
+        font-size: 1.4rem;
+    }
+
+    .ambiente__parrafo {
+        font-size: 1.1rem;
+    }
+    /*Estilos para Ubicación y horario*/
+    .ubicacion__contenedor__elementos {
+        gap: 15px;
+    }
+
+    .ubicacion__titulo {
+        font-size: 2rem;
+    }
+
+    .ubicacion__subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .ubicacion__parrafo {
+        font-size: 1.2rem;
+    }
+    /* Estilos para Promociones */
+    .promocionesContenido {
+        grid-template-columns: 1fr; 
+        gap: 4rem;
+    }
+
+    .promociones__contenedor__elementos {
+        grid-template-columns: 1fr; 
+        gap: 1.5rem;
+    }
+
+    .promociones__titulo {
+        font-size: 2rem;
+    }
+
+    .promociones__subtitulos {
+        font-size: 1.4rem;
+    }
+
+    .promociones__parrafo {
+        font-size: 1.1rem;
+    }
+
+    .promociones__numero {
+        min-width: 80px;
+        min-height: 150px;
+        font-size: 1.4rem;
+    }
+    /* Estilos para Beneficios para clientes */
+    .beneficios__contenido {
+        grid-template-columns: 1fr; 
+        gap: 4rem;
+    }
+
+    .beneficios__elementos {
+        grid-template-columns: 1fr; 
+        gap: 1.5rem;
+    }
+
+    .beneficios__titulo {
+        font-size: 2rem;
+    }
+
+    .beneficios__subtitulo {
+        font-size: 1.4rem;
+    }
+
+    .beneficios__parrafo {
+        font-size: 1.1rem;
+    }
+
+    .beneficio__numero {
+        min-width: 35px;
+        min-height: 35px;
+        font-size: 1.4rem;
+    }
+    /* Estilos para Testimonios Comensales */
+    .testimonio__contenido {
+        gap: 2rem;
+    }
+
+    .testimonio__titulo {
+        font-size: 1.8rem;
+    }
+
+    .testimonio__subtitulo {
+        font-size: 1.4rem;
+    }
+
+    .testimonio__parrafo {
+        font-size: 1.1rem;
+    }
+    /* Estilos para Proximos Pasos */
+    .proximosPasos {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .proximosPasos__contenedor {
+        width: 100%;
+    }
+
+    .proximosPasos__texto {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .proximosPasos__titulo {
+        font-size: 2rem;
+    }
+
+    .proximosPasos__parrafo {
+        font-size: 1.2rem;
+    }
+
+    .proximosPasos__imagen {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .imagenProximosPasos {
+        width: 70%;
+    }
+    /* Estilos para Contacto y Redes */
+    .contacto__contenedor__elementos {
+        gap: 15px;
+    }
+
+    .contacto__titulo {
+        font-size: 2rem;
+    }
+
+    .contacto__subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .contacto__parrafo {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablets verticales (pantallas medianas) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        margin: 2rem;
+        height: auto;
+    }
+
+    .imagenHeader {
+        width: 100%;
+        height: auto;
+    }
+
+    .header__contenedorTexto {
+        padding: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__contenedorTitulo {
+        font-size: 1.8rem;
+    }
+
+    .header__contenedorParrafo {
+        font-size: 1.1rem;
+    }
+    /* Estilos Quienes Somos  */
+    .quienes-somos__contenido {
+        flex-direction: column;
+        gap: 3rem; 
+    }
+
+    .quienes-somos__columna {
+        flex: 1 1 100%; 
+        text-align: center;
+    }
+
+    .quienes-somos__titulo {
+        font-size: 1.8rem;
+    }
+
+    .quienes-somos__subtitulos {
+        font-size: 1.2rem;
+    }
+
+    .quienes-somos__parrafo {
+        font-size: 1rem;
+    }
+    /* Estilo Nuevo Menú */
+    .menu__contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .menu__elementos__alimentos{
+        grid-template-columns: 1fr;
+    }
+    .menu__imagen {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .menu__titulo {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .menu__subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .menu__parrafo {
+        font-size: 1rem;
+    }
+    /* Estilos para Ambiente */
+    .ambiente__contenido {
+        display: flex;
+        flex-direction: column; /* Cambiar a diseño en columna */
+        gap: 2rem;
+    }
+
+    .ambiente__imagen {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .ambiente__tituloprincipal {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .ambiente__subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .ambiente__parrafo {
+        font-size: 1rem;
+    }
+    /* Estilos para Ubicación y horarios */
+    .ubicacion__contenedor__elementos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .ubicacion__titulo {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .ubicacion__subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .ubicacion__parrafo {
+        font-size: 1.1rem;
+    }
+    /* Estilos para Promociones */
+    .promocionesContenido {
+        display: flex;
+        flex-direction: column; /* Elementos apilados */
+        gap: 2rem;
+    }
+
+    .promociones__contenedor__elementos {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .promociones__titulo {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .promociones__subtitulos {
+        font-size: 1.3rem;
+    }
+
+    .promociones__parrafo {
+        font-size: 1rem;
+    }
+
+    .promociones__numero {
+        min-width: 70px;
+        min-height: 130px;
+        font-size: 1.2rem;
+    }
+    /* Estilos para Beneficios para clientes */
+    .beneficios__contenido {
+        display: flex;
+        flex-direction: column; /* Elementos apilados */
+        gap: 2rem;
+    }
+
+    .beneficios__elementos {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .beneficios__titulo {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .beneficios__subtitulo {
+        font-size: 1.3rem;
+    }
+
+    .beneficios__parrafo {
+        font-size: 1rem;
+    }
+
+    .beneficio__numero {
+        min-width: 30px;
+        min-height: 30px;
+        font-size: 1.2rem;
+    }
+    /* Estilos para Testimonios Comensales */
+    .testimonio__contenido {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+    }
+
+    .testimonio__titulo {
+        font-size: 1.6rem;
+    }
+
+    .testimonio__subtitulo {
+        font-size: 1.3rem;
+    }
+
+    .testimonio__parrafo {
+        font-size: 1rem;
+    }
+    /* Estilos para Proximos Pasos */
+    .proximosPasos {
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .proximosPasos__texto {
+        padding: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .proximosPasos__titulo {
+        font-size: 1.8rem;
+    }
+
+    .proximosPasos__parrafo {
+        font-size: 1.1rem;
+    }
+
+    .proximosPasos__imagen {
+        margin-top: 2rem;
+    }
+
+    .imagenProximosPasos {
+        width: 80%;
+    }
+    /* Estilos para Contacto y Redes */
+    .contacto__contenedor__elementos {
+        display: grid;
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        gap: 1.5rem;
+    }
+
+    .contacto__titulo {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .contacto__subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .contacto__parrafo {
+        font-size: 1.1rem;
+    }
+}
+
+/* Pantallas pequeñas (celulares grandes) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        margin: 1rem;
+        height: auto;
+    }
+
+    .imagenHeader {
+        width: 100%;
+        height: auto;
+    }
+
+    .header__contenedorTexto {
+        padding: 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__contenedorTitulo {
+        font-size: 1.5rem;
+    }
+
+    .header__contenedorParrafo {
+        font-size: 1rem;
+    }
+    /* Estilos Quienes Somos */
+    .quienes-somos {
+        margin: 2rem 1rem; 
+        padding: 20px;
+    }
+
+    .quienes-somos__titulo {
+        font-size: 1.6rem;
+    }
+
+    .quienes-somos__subtitulos {
+        font-size: 1.1rem;
+    }
+
+    .quienes-somos__parrafo {
+        font-size: 0.95rem;
+    }
+    /* Estilos Nuevo Menú */
+    .menu__contenido {
+        display: flex;
+        flex-direction: column; 
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .menu__elementos__alimentos{
+        grid-template-columns: 1fr;
+    }
+    .menu__imagen {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .menu__titulo {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .menu__subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .menu__parrafo {
+        font-size: 0.95rem;
+    }
+
+    .menu__elemento {
+        padding: 1rem;
+        width: 90%;
+        text-align: center;
+    }
+    /* Estilos para Ambiente */
+    .ambiente__contenido {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .ambiente__imagen {
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .ambiente__contenedor__elementos {
+        grid-template-columns: 1fr; 
+    }
+
+    .ambiente__tituloprincipal {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .ambiente__subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .ambiente__parrafo {
+        font-size: 0.95rem;
+    }
+
+    .ambiente__icono {
+        max-width: 30px;
+    }
+    /* Estilos para Ubicación y horarios */
+    .ubicacion__contenedor__elementos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .ubicacion__titulo {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .ubicacion__subtitulo {
+        font-size: 1rem;
+    }
+
+    .ubicacion__parrafo {
+        font-size: 1rem;
+    }
+
+    .ubicacion__numero {
+        min-width: 35px;
+        min-height: 35px;
+        font-size: 1.4rem;
+    }
+    /* Estilos para Promociones */
+    .promocionesContenido {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .promociones__contenedor__elementos {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .promociones__titulo {
+        font-size: 1.6rem;
+    }
+
+    .promociones__subtitulos {
+        font-size: 1.2rem;
+    }
+
+    .promociones__parrafo {
+        font-size: 0.95rem;
+    }
+
+    .promociones__numero {
+        min-width: 60px;
+        min-height: 120px;
+        font-size: 1.1rem;
+    }
+    /* Estilos para Beneficios para clientes */
+    .beneficios__contenido {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .beneficios__elementos {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .beneficios__titulo {
+        font-size: 1.6rem;
+    }
+
+    .beneficios__subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .beneficios__parrafo {
+        font-size: 0.95rem;
+    }
+
+    .beneficio__numero {
+        min-width: 25px;
+        min-height: 25px;
+        font-size: 1.1rem;
+    }
+    /* Estilos para Testimonios Comensales */
+    .testimonios {
+        padding: 3em;
+    }
+
+    .testimonio__contenido {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 1.5rem;
+    }
+
+    .testimonio__titulo {
+        font-size: 1.5rem;
+    }
+
+    .testimonio__subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .testimonio__parrafo {
+        font-size: 0.95rem;
+    }
+    /* Estilos para Proximos Pasos */
+    .proximosPasos {
+        margin: 1rem;
+    }
+
+    .proximosPasos__texto {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .proximosPasos__titulo {
+        font-size: 1.6rem;
+    }
+
+    .proximosPasos__parrafo {
+        font-size: 1rem;
+    }
+
+    .proximosPasos__boton {
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .proximosPasos__imagen {
+        margin-top: 1rem;
+    }
+
+    .imagenProximosPasos {
+        width: 90%;
+    }
+    /* Estilos para Contacto y Redes */
+    .contacto__texto {
+        padding: 1.5rem;
+    }
+
+    .contacto__contenedor__elementos {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 1rem;
+    }
+
+    .contacto__titulo {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .contacto__subtitulo {
+        font-size: 1rem;
+    }
+
+    .contacto__parrafo {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas extra pequeñas (celulares pequeños) */
+@media (max-width: 360px) {
+    .header {
+        margin: 0.5rem;
+    }
+
+    .header__contenedorTexto {
+        padding: 1rem;
+    }
+
+    .header__contenedorTitulo {
+        font-size: 1.2rem;
+    }
+
+    .header__contenedorParrafo {
+        font-size: 0.9rem;
+    }
+    /* Estilos Quienes Somos */
+    .quienes-somos {
+        margin: 1rem;
+        padding: 10px;
+    }
+
+    .quienes-somos__titulo {
+        font-size: 1.4rem;
+    }
+
+    .quienes-somos__parrafo {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    /* Estilos Nuevo Menú */
+    .menu__elementos__alimentos{
+        grid-template-columns: 1fr;
+    }
+    .bloqueMenu {
+        margin: 1rem;
+    }
+
+    .menu__contenido {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .menu__titulo {
+        font-size: 1.4rem;
+    }
+
+    .menu__parrafo {
+        font-size: 0.9rem;
+    }
+
+    .menu__elemento {
+        padding: 0.8rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu__imagen {
+        margin-top: 1rem;
+    }
+    /* Estilos para Ambiente */
+    .bloqueAmbiente {
+        margin: 1rem;
+    }
+
+    .ambiente__contenido {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .ambiente__imagen {
+        margin-top: 1rem;
+    }
+
+    .ambiente__tituloprincipal {
+        font-size: 1.4rem;
+    }
+
+    .ambiente__parrafo {
+        font-size: 0.9rem;
+    }
+
+    .ambiente__contenedor__elementos {
+        grid-template-columns: 1fr;
+    }
+    /* Estilos para Ubiación y usuarios */
+    .bloque__ubicacion {
+        margin: 1rem;
+    }
+
+    .ubicacion__titulo {
+        font-size: 1.4rem;
+    }
+
+    .ubicacion__subtitulo {
+        font-size: 0.9rem;
+    }
+
+    .ubicacion__parrafo {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .ubicacion__contenedor__elementos {
+        gap: 0.8rem;
+    }
+
+    .ubicacion__numero {
+        min-width: 30px;
+        min-height: 30px;
+        font-size: 1.2rem;
+    }
+    /* Estilos para Promociones */
+    .BloquePromociones {
+        margin: 1rem;
+    }
+
+    .promociones__titulo {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .promociones__subtitulos {
+        font-size: 1rem;
+    }
+
+    .promociones__parrafo {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+
+    .promociones__numero {
+        min-width: 50px;
+        min-height: 100px;
+        font-size: 1rem;
+    }
+    /* Estilos para Beneficios para clientes */
+    .bloqueBeneficios {
+        margin: 1rem;
+    }
+
+    .beneficios__titulo {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .beneficios__subtitulo {
+        font-size: 1rem;
+    }
+
+    .beneficios__parrafo {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+
+    .beneficio__numero {
+        min-width: 20px;
+        min-height: 20px;
+        font-size: 1rem;
+    }
+    /* Estilos para Testimonios Comensales */
+    .testimonios {
+        margin: 20px auto;
+        padding: 2em;
+    }
+
+    .testimonio__titulo {
+        font-size: 1.4rem;
+    }
+
+    .testimonio__subtitulo {
+        font-size: 1rem;
+    }
+
+    .testimonio__parrafo {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+
+    .testimonio__contenido {
+        gap: 1rem;
+    }
+    /* Estilos para Proximos Pasos */
+    .proximosPasos__titulo {
+        font-size: 1.4rem;
+    }
+
+    .proximosPasos__parrafo {
+        font-size: 0.9rem;
+    }
+
+    .proximosPasos__boton {
+        font-size: 14px;
+    }
+
+    .imagenProximosPasos {
+        width: 100%;
+    }
+    /* Estilos para Contacto y Redes */
+    .bloque__contacto {
+        margin: 1rem;
+    }
+
+    .contacto__titulo {
+        font-size: 1.4rem;
+    }
+
+    .contacto__subtitulo {
+        font-size: 0.9rem;
+    }
+
+    .contacto__parrafo {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+
+    .contacto__contenedor__elementos {
+        gap: 0.8rem;
+    }
+}
